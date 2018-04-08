@@ -1,0 +1,140 @@
+/* universal styles */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+/* header styles  */
+header {
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  top: 0;
+  opacity: 0.9;
+}
+
+nav span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.logo img {
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+}
+
+/* Main content styling or MISSION*/
+
+content {
+  display: flex;
+  width: 1200px; /*assigned arbitrarily to match background picture*/
+  padding-top: 62px; /*aligns top of .mission with bottom of header */
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background-image: url("./images/img-mission-background.jpg");
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  line-height: 0px; /*shrinks effective height of banner? */
+}
+
+/*  Tea section*/
+
+.tea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  /* padding: 0px 150px; */
+}
+
+.box-set {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: auto;
+  left: 0;
+  right: 0;
+  /* padding: 10px; */
+}
+
+.box {
+  display: flex;
+  flex-wrap;
+  width: 300px;
+  height: 200px;
+}
+
+.box-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.box.image-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.box.fall-image {
+  background-image: url("./images/img-berryblitz.jpg");
+}
+
+.box.spiced-image {
+  background-image: url("./images/img-spiced-rum.jpg")
+}
+
+.seasonal-image {
+  background-image: url("./images/img-donut.jpg")
+}
+
+.myrtle-image {
+  background-image: url("./images/img-myrtle-ave.jpg")
+}
+
+.bedford-image {
+  background-image: url("./images/img-bedford-bizarre.jpg")
+}
+
+h4.box-banner {
+  margin: 0px;
+  padding: 0px;
+}
