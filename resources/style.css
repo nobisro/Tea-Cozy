@@ -31,6 +31,11 @@ nav span {
   padding: 0px 20px;
 }
 
+nav a:hover {
+  background-color: #5D5A5A;
+  color: white;
+}
+
 .logo {
   display: inline-flex;
   align-items: center;
@@ -43,8 +48,12 @@ nav span {
   align-items: center;
   height: 50px;
 }
-
-/* Main content styling or MISSION*/
+:target:before {
+  content: "";
+  display: block;
+  height: 69px; /*Fixes header height issue when jumping to #tea */
+}
+                /* Main content styling or MISSION */
 
 content {
   display: flex;
@@ -59,6 +68,10 @@ content {
   width: 100%;
   height: 800px;
   background-image: url("./images/img-mission-background.jpg");
+  margin-left: 30px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-bottom: 30px;
 }
 
 .banner {
@@ -66,6 +79,7 @@ content {
   flex-direction: column;
   align-items: center;
   background-color: black;
+  color: seashell;
   line-height: 0px; /*shrinks effective height of banner? */
 }
 
@@ -73,13 +87,11 @@ content {
 
 .tea {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid blue;
-  /* padding: 0px 150px; */
+  /* border: 1px solid blue; */
 }
 
 .box-set {
@@ -88,14 +100,11 @@ content {
   flex-wrap: wrap;
   width: 300px;
   height: auto;
-  left: 0;
-  right: 0;
-  /* padding: 10px; */
+  justify-content: center;
 }
 
 .box {
   display: flex;
-  flex-wrap;
   width: 300px;
   height: 200px;
 }
@@ -108,8 +117,6 @@ content {
 
 .box.image-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   background-repeat: no-repeat;
   background-size:contain;
 }
@@ -134,7 +141,82 @@ content {
   background-image: url("./images/img-bedford-bizarre.jpg")
 }
 
-h4.box-banner {
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  padding-top: 20px;
+}
+
+.br {
+  margin: 0px 25px;
+}
+
+.box-banner {
   margin: 0px;
   padding: 0px;
+  display: inline-flex;
+  padding-top: 10px;
+}
+
+               /* Locations section */
+
+.locations {
+  width: 100%;
+  height: 500px;
+  background-image: url("./images/img-locations-background.jpg");
+  display: flex;
+  background-repeat: no-repeat;
+  background-position:center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.location-banner {
+  display: inline-flex;
+  background-color: none;
+  text-height: 0;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  margin: 15px 20px;
+}
+
+.location-position {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  padding-bottom: 64px; /*Horizontally aligns the three squares in Locations*/
+}
+
+.h2location {
+  display: inline-flex;
+  text-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+              /* Footer Section */
+
+.footer {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-height {
+  height: 200px;
 }
